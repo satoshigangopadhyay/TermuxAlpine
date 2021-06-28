@@ -90,7 +90,7 @@ checkdeps() {
 # URLs of all possibls architectures
 
 seturl() {
-	ALPINE_VER=$(curl -s http://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/$SETARCH/latest-releases.yaml | grep -m 1 -o version.* | sed -e 's/[^0-9.]*//g' -e 's/-$//')
+	ALPINE_VER="3.12.0"
 	if [ -z "$ALPINE_VER" ] ; then
 		exit 1
 	fi
