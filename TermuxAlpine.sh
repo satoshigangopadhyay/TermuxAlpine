@@ -94,7 +94,7 @@ seturl() {
 	if [ -z "$ALPINE_VER" ] ; then
 		exit 1
 	fi
-	ALPINE_URL="http://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/$SETARCH/alpine-minirootfs-$ALPINE_VER-$SETARCH.tar.gz"
+	ALPINE_URL="https://dl-cdn.alpinelinux.org/alpine/v3.12/releases/$SETARCH/alpine-minirootfs-$ALPINE_VER-$SETARCH.tar.gz"
 }
 
 # Utility function to get tar file
